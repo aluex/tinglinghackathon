@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Foot Massager</h3>
+  <ion-list>
+  <ion-list-header>
+      I want...
+    </ion-list-header>
+  <ion-select [(ngModel)]="selectedLeave">
+      <ion-option value="CASUAL LEAVE" selected>Circulation</ion-option>
+      <ion-option value="COMP OFF">Metabolism</ion-option>
+      <ion-option value="EARNED LEAVE">Fatigue</ion-option>
+      <ion-option value="SICK LEAVE">Insomnia</ion-option>
+  </ion-select>
+  </ion-list>
+  <ion-list>
+    <ion-list-header>
+      Adjust your timer <ion-icon name="clock"></ion-icon>
+    </ion-list-header>
+    <ion-item>
+  <ion-range [(ngModel)]="singleValue" color="danger" pin="true"></ion-range>
+    </ion-item>
+  </ion-list>
+  <ion-item style="text-align: center">
+  <button ion-button icon-right>
+  Start
+  <ion-icon name="play"></ion-icon>
+  </button>
+  <button ion-button icon-right>
+  Pause
+  <ion-icon name="pause"></ion-icon>
+  </button>
+  <button ion-button icon-right>
+  Stop
+  <ion-icon name="square"></ion-icon>
+  </button>
+  </ion-item>
+  <ion-img src="assets/imgs/maxresdefault.jpg"></ion-img>
+</ion-content>
